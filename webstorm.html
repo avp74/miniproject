@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webstorm</title>
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <menu>
+      <ul>
+        <a href="webstorm.html">Webstorm</a>
+        <a href="#">GIT</a>
+      </ul>
+    </menu>
+  </header>
+  <main>
+    <h1> Webstorm </h1>
+    <p>
+    <li> How to setup WebStorm to autosave and deploy to AFS - Basic</li>
+    <p>
+    First, while on Webstorm you will go to the Tools tab on your computer. Next select deployment and configuration. Then on the top left of the menu you will click on the "+" symbol, and add a SFTP (SSH File Transfer Protocol) and name it afs. Next you will add the host afs(add any number).njit.edu and input your username and password. Click on autodetect for the root path, and if you are already know you will be creating a website add /public_html. Then add the website your html files will be uploaded on the web. Then you will go to the top where it says mappings and add a deployment path and web path that is the same as your project, that way you know where your html file is on the web. Lastly to get automatic uploads you need to go back to tools, deployment, and select automatic uploads. This way your files will be automatically uploaded to afs.
+    </p>
+    <li> How to create files and folders locally with WebStorm</li>
+    <p>
+    First, while on Webstorm you will go to your project folder in the top left, right click on the folder. Now if you want to create a new folder select "directory" and name the directory. This creates a new folder to store files. To create a new file start the same way but select file, or one of the variations of files for example html file, or stylesheet. This action creates a new file on your local computer, only after uploading to your remote host will these changes be made on the web.
+    </p>
+    <li> How to create files and folders on AFS through the terminal.</li>
+    <p>
+    After setting up AFS on your computer, see "setup and deploy to AFS" above, go to tools at the top menu on your computer and select "Start SSH session" and select afs. i allows you to create (or insert) new files, d	deletes files, w	edits (or write) to existing files, cd changes directories, and pwd shows you the directory you are currently at.
+    </p>
+    <li> How to setup a WebStorm run configuration to build HTML5 Boilerplate with Grunt by pressing the play
+      button.How to use this to develop your site. How to setup deployment to properly deploy your site.
+    </li>
+    <p>
+    Before you start install node and Grunt in the terminal by typing in npm install -g. Follow info on this web page,
+      https://www.jetbrains.com/help/webstorm/run-debug-configuration-grunt.html for more instructions.
+    </p>
+
+    <li> How to find your website on AFS, login to terminal, and perform basic linux commands: copy files, copy folders, move/rename files and folders, how your AFS folder/directory structure relates to accessing your website through the browser.
+    </li>
+    <p>
+    You can find your website on afs by plugging your web address into a browser, for example web.njit.edu/~ucid. You can log in to the afs terminal by selecting "Start SSH session" in the tools tab on your computer and selecting afs, after setting up your deployment configuration (listed above). On Linux cp is for copying files and folders, cd is to change the name of directories, your directories on afs are where all of your project files go and the folder names (based on what you made them in mapping) show where they are located on your web browser.
+    </p>
+
+  </main>
+  <div id="sidebar">
+    <li><a href="#">Terminal</a></li>
+    <li><a href="#">Login</a></li>
+    <li><a href="#">File</a></li>
+    <li><a href="#">Folder / Directory</a></li>
+    <li><a href="#">Webstorm</a></li>
+    <li><a href="#">Integrated Development Environment (IDE)</a></li>
+    <li><a href="#">HTML5 Boilerplate</a></li>
+    <li><a href="#">Grunt</a></li>
+    <li><a href="#">AFS</a></li>
+    <li><a href="#">Linux</a></li>
+    <li><a href="#">Http</a></li>
+    <li><a href="#">Web browser</a></li>
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">Rules for Naming Files and Folders on the Web</a></li>
+  </div>
+</div>
+</body>
+</html>

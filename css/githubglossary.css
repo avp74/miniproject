@@ -16,16 +16,3 @@ menu {
   padding: 10px;
   margin: 0;
 }
-main {
-  float: left;
-  width: 65%;
-  padding: 20px;
-  text-align: justify;
-  padding-top: 150px;
-}
-li {
-  padding: 15px;
-}
-#sidebar {
-  padding-top: 160px;
-}

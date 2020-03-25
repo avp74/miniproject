@@ -13,43 +13,87 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/z-layout.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+  your browser</a> to improve your experience and security.</p>
+<![endif]-->
 
-  <!-- Add your site or application content here -->
+<!-- Add your site or application content here -->
+<div id="wrapper">
   <header>
-    <h1> Homepage for Mini Project</h1>
-      <menu>
-        <li><a href="#">Webstorm</a></li>
-        <li><a href="#">GIT</a></li>
-      </menu>
-
+    <div id = "logo">
+      <IMG SRC="img/AE Worldwide-3.png" ALT="logo">
+    </div>
+    <menu>
+      <ul>
+        <a href="webstorm.html">Webstorm</a>
+        <a href="github_main.html">Github</a>
+      </ul>
+    </menu>
   </header>
+  <main>
+    <h1> Homepage for Mini Project</h1>
+  </main>
 
+  <div class="row">
+    <div class="column">
+      <h2>Webstorm</h2>
+      <p> You will learn:
+      <li> How to setup WebStorm to autosave and deploy to AFS - Basic</li>
+      <li> How to create files and folders locally with WebStorm</li>
+      <li> How to create files and folders on AFS through the terminal.</li>
+      <li> How to setup a WebStorm run configuration to build HTML5 Boilerplate with Grunt by pressing the play
+        button.
+      </li>
+      <li> How to use this to develop your site. How to setup deployment to properly deploy your site.</li>
+      <li> How to find your website on AFS, login to terminal, and perform basic linux commands: copy files, copy
+        folders,
+        move/rename files and folders, how your AFS folder/directory structure relates to accessing your website through
+        the browser.
+      </li>
+      </p>
+    </div>
 
-
-
-
+    <div class="column">
+      <h2>GitHub</h2>
+      <p>
+      You will learn:
+      <li> How to make a repository</li>
+      <li> How to make a commit in WebStorm</li>
+      <li> How to make a branch</li>
+      <li> How to merge one branch to another</li>
+      <li> How to make a Pull Request and merge on Github</li>
+      </p>
+    </div>
+  </div>
 
 
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+    window.ga = function () {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+</div>
 </body>
 
 </html>
